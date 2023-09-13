@@ -1652,7 +1652,13 @@ body.no-scroll {
 }
 
 .services__item-title {
-    position: relative
+    position: relative;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.14px;
+    text-transform: unset;
 }
 
 .services__item-title::before,
@@ -2094,6 +2100,11 @@ body.no-scroll {
     position: relative;
     width: -moz-fit-content;
     width: fit-content;
+
+}
+
+.content__item-link h3 {
+    font-weight: inherit;
     color: #1c1c1c;
     font-size: 14px;
     letter-spacing: -0.14px
@@ -3406,8 +3417,11 @@ body.no-scroll {
     line-height: 1;
     letter-spacing: -0.32px;
     text-transform: uppercase;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    font-weight: 400;
 }
+
+
 
 .contacts__item-title+.contacts__item-text {
     margin-bottom: 24px
@@ -4168,7 +4182,8 @@ body.no-scroll {
     font-weight: 500;
     line-height: 130%;
     letter-spacing: -0.14px;
-    margin-bottom: 22px
+    margin-bottom: 22px;
+    font-weight: 400;
 }
 
 .privacy__text {
