@@ -1,0 +1,338 @@
+.form {
+  margin-bottom: 60px;
+
+  &__inner {
+    width: 100%;
+    max-width: 918px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin-bottom: 28px;
+  }
+
+  &__text,
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.32px;
+    white-space: nowrap;
+  }
+
+  &__label {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 43px;
+    width: 100%;
+
+    &--download {
+      margin-top: auto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+    }
+
+    &-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 40%;
+
+      .form__input {
+        width: 95%;
+      }
+    }
+  }
+
+  #download {
+    display: none;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 34px;
+    column-gap: 34px;
+    margin-bottom: 42px;
+
+    .form__box {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 41px;
+
+    &:has(+.label) {
+      margin-bottom: 28px;
+    }
+
+    .form__input {
+      width: 100%;
+    }
+
+    .form__label,
+    .form__box,
+    .form__text {
+      margin-bottom: 0;
+    }
+
+    .form__label {
+      &--download {
+        margin-bottom: auto;
+      }
+
+      .form__label-box {
+        width: 100%;
+      }
+    }
+
+    &-label {
+      color: #8A8A8A;
+      font-family: "Pais Alt";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.198px;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      transition: color .38s ease-in-out;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &--checked {
+        color: #1C1C1C;
+      }
+    }
+
+    &-input {
+      background-color: transparent;
+      border-bottom: 1px solid #8A8A8A;
+      font-size: 12px;
+
+      &::-webkit-input-placeholder {
+        color: #8A8A8A;
+        font-family: 'Pais Alt';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      &::-moz-placeholder {
+        color: #8A8A8A;
+        font-family: 'Pais Alt';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      &:-ms-input-placeholder {
+        color: #8A8A8A;
+        font-family: 'Pais Alt';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      &::-ms-input-placeholder {
+        color: #8A8A8A;
+        font-family: 'Pais Alt';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+
+      &::placeholder {
+        color: #8A8A8A;
+        font-family: 'Pais Alt';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: -0.24px;
+      }
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-size: 10px;
+    letter-spacing: -0.1px;
+    color: #FF1D1D;
+    margin-top: 2px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    font-family: 'Pais Alt';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.24px;
+    background-color: transparent;
+    border-bottom: 1px solid #1C1C1C;
+
+    &::-webkit-input-placeholder {
+      color: #8A8A8A;
+      font-family: 'Pais Alt';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+    }
+
+    &::-moz-placeholder {
+      color: #8A8A8A;
+      font-family: 'Pais Alt';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+    }
+
+    &:-ms-input-placeholder {
+      color: #8A8A8A;
+      font-family: 'Pais Alt';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+    }
+
+    &::-ms-input-placeholder {
+      color: #8A8A8A;
+      font-family: 'Pais Alt';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+    }
+
+    &::placeholder {
+      color: #8A8A8A;
+      font-family: 'Pais Alt';
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.24px;
+    }
+
+    // &--fs {
+    //   font-family: 'PF DIN Text Pro';
+
+    //   &::-webkit-input-placeholder {
+    //     font-family: 'PF DIN Text Pro';
+    //   }
+
+    //   &::-moz-placeholder {
+    //     font-family: 'PF DIN Text Pro';
+    //   }
+
+    //   &:-ms-input-placeholder {
+    //     font-family: 'PF DIN Text Pro';
+    //   }
+
+    //   &::-ms-input-placeholder {
+    //     font-family: 'PF DIN Text Pro';
+    //   }
+
+    //   &::placeholder {
+    //     font-family: 'PF DIN Text Pro';
+    //   }
+    // }
+  }
+
+  &__input {
+    width: 40%;
+    padding-bottom: 1px;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 18px;
+  }
+
+  &__btn {
+    @include fluid(font-size, 14px, 16px);
+  }
+
+  .label {
+    max-width: 310px;
+    margin-bottom: 17px;
+    grid-template-columns: 18px 1fr;
+
+    &__inputCustom {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .link {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+
+    &__block {
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+    &__label-box,
+    &__input {
+      width: 100%;
+    }
+
+    &__box,
+    &__label,
+    &__block {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    margin-bottom: 40px;
+
+    &__inner {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .form {
+
+    &__box {
+      flex-wrap: wrap;
+    }
+  }
+}

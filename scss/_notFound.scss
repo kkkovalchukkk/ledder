@@ -1,0 +1,40 @@
+.notFound {
+  margin-top: 198px;
+  margin-bottom: 201px;
+
+  &__title {
+    text-align: center;
+
+    &:has(+.notFound__title) {
+      margin-bottom: 12px;
+    }
+
+    +.notFound__title {
+      margin-bottom: 38px;
+    }
+  }
+
+  .link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .notFound {
+    margin-top: 122px;
+    margin-bottom: 194px;
+
+    &__title {
+      text-align: center;
+
+      &:has(+.notFound__title) {
+        margin-bottom: 24px;
+      }
+
+      +.notFound__title {
+        margin-bottom: 46px;
+      }
+    }
+  }
+}

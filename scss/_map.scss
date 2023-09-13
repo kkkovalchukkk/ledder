@@ -1,0 +1,48 @@
+.map {
+  &__item {
+    iframe {
+      width: 100%;
+      height: 360px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .map {
+    &__item {
+      iframe {
+        height: 490px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .map {
+    &__item {
+      iframe {
+        height: 370px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .map {
+    &__item {
+      iframe {
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .map {
+    &__item {
+      iframe {
+        height: 160px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.logotip {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  @include fluid(padding-top, 230px, 300px);
+  @include fluid(padding-bottom, 230px, 344px);
+  background-color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    @include fluid(width, 85px, 114px);
+    @include fluid(height, 58px, 80px);
+  }
+}
+
+@media (max-width: 479px) {
+  .logotip {
+    padding-top: 220px;
+    padding-bottom: 220px;
+
+    &__img {
+      width: 61px;
+      height: 42px;
+    }
+  }
+}

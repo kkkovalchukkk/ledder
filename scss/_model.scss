@@ -1,0 +1,129 @@
+.model {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  &__title {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &__item {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1c1c1c;
+    cursor: pointer;
+
+    &:first-child {
+      border-top: 1px solid #1c1c1c;
+    }
+
+    &--active {
+      .model__item-title::before {
+        transform: rotate(-45deg);
+      }
+
+      .model__item-title::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    &-title {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: -0.14px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 9px;
+        height: 1px;
+        background-color: #1c1c1c;
+        transition: transform 0.38s ease-in-out;
+        border-radius: 25px;
+        pointer-events: none;
+      }
+
+      &::before {
+        right: 7px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        right: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &-img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 380px;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      letter-spacing: -0.14px;
+    }
+
+    &-hidden {
+      display: none;
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include fluid(gap, 20px, 60px);
+      @include fluid(margin-top, 14px, 28px);
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .model {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      &-img {
+        height: 200px;
+      }
+
+      &-box {
+        grid-template-columns: .65fr 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .model {
+    &__item {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {}

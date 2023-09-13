@@ -1,0 +1,44 @@
+.tab {
+  &__target {
+    color: var(--dark-grey, #8A8A8A);
+    font-size: 12px;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    transition: color .38s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+      color: var(--black, #1C1C1C);
+      font-size: 12px;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+    }
+
+    &--active {
+      pointer-events: none;
+    }
+  }
+
+  &__info {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.38s ease-in-out;
+
+    &--active {
+      display: block;
+    }
+
+    &--opacity {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tab {
+    &__target {
+      font-size: 12px;
+    }
+  }
+}

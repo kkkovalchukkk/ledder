@@ -1,0 +1,115 @@
+.questions {
+  margin-top: 62px;
+  margin-bottom: 62px;
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(column-gap, 20px, 40px);
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-bottom: 1px solid #1c1c1c;
+    cursor: pointer;
+
+    &:first-child {
+      border-top: 1px solid #1c1c1c;
+    }
+
+    &--active {
+      .questions__item-title::before {
+        transform: rotate(-45deg);
+      }
+
+      .questions__item-title::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    &-title {
+      position: relative;
+      font-weight: 400;
+      letter-spacing: -0.14px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 9px;
+        height: 1px;
+        background-color: #1c1c1c;
+        transition: transform 0.38s ease-in-out;
+        border-radius: 25px;
+        pointer-events: none;
+      }
+
+      &::before {
+        right: 7px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        right: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &-text {
+      display: none;
+      margin-top: 16px;
+      color: #8A8A8A;
+      font-size: 12px;
+      line-height: 1.1;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .questions {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__box {
+      &:nth-child(2) {
+        .questions__item {
+          &:first-child {
+            border-top: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .questions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 480px) {}

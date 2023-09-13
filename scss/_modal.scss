@@ -1,0 +1,63 @@
+.modal {
+  display: none;
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 53px;
+  background-color: #f2f2f2;
+
+  &.fancybox__content {
+    padding: 53px 0 0;
+
+    >.f-button.is-close-btn {
+      --f-button-width: 20px;
+      --f-button-height: 20px;
+      top: 17px;
+      right: 23px;
+      background-color: transparent;
+
+      svg {
+        width: 26px;
+        height: 26px;
+        color: #1c1c1c;
+      }
+    }
+  }
+
+  &__img {
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    margin-bottom: 0;
+
+    &__inner {
+      padding-bottom: 40px;
+      @include fluid(padding-left, 40px, 52px);
+      @include fluid(padding-right, 40px, 52px);
+      max-width: unset;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    .form {
+      &__inner {
+        padding: 40px 20px;
+      }
+
+      &__text,
+      &__label {
+        font-size: 12px;
+      }
+
+      &__label,
+      &__box {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
