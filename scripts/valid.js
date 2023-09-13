@@ -9,7 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const modalTelephoneInputEl = modalFormEl.querySelector('#modal-tel-input');
   const middleNameInputEl = middleFormEl?.querySelector('#modal-name-input');
   const middleEmailInputEl = middleFormEl?.querySelector('#modal-email-input');
-  const middleTelephoneInputEl = middleFormEl?.querySelector('#modal-tel-input');
+  const middleTelephoneInputEl =
+    middleFormEl?.querySelector('#modal-tel-input');
 
   const checkInputValidity = (input) => input.value;
 
@@ -28,10 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    if (
-      nameInput.value.length < 2 ||
-      nameInput.value.length > 30
-    ) {
+    if (nameInput.value.length < 2 || nameInput.value.length > 30) {
       nameInput.classList.add('input--invalid');
       return;
     } else {
@@ -94,7 +92,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const submitMiddleForm = (e) => {
-  e.preventDefault();
+    e.preventDefault();
     [middleNameInputEl, middleEmailInputEl, middleTelephoneInputEl].forEach(
       (input) => {
         if (!checkInputValidity(input)) {
@@ -130,11 +128,13 @@ window.addEventListener('DOMContentLoaded', () => {
       middleEmailInputEl.classList.remove('input--invalid');
     }
     middleFormEl.submit();
-
-  }
+  };
 
   document.querySelectorAll('.form-input-name').forEach((input) => {
     input.addEventListener('input', (event) => {
+      if (event.target.value.length > 15) {
+        event.target.value = event.target.value.slice(0, 15);
+      }
       const inputValue = event.target.value;
       const regex = /^[a-zA-Zа-яА-Я]+$/;
 
