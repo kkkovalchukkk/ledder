@@ -1,73 +1,73 @@
 $(document).ready(function () {
-  const loadScript = (url) =>
-    new Promise((resolve) => {
-      const script = document.createElement('script');
-      script.addEventListener('load', () => {
-        resolve();
-      });
+  // const loadScript = (url) =>
+  //   new Promise((resolve) => {
+  //     const script = document.createElement('script');
+  //     script.addEventListener('load', () => {
+  //       resolve();
+  //     });
 
-      script.src = url;
+  //     script.src = url;
 
-      document.body.append(script);
-    });
+  //     document.body.append(script);
+  //   });
 
-  loadScript('https://www.youtube.com/iframe_api').then(() => {
-    function onYouTubeIframeAPIReady() {
-      YT.ready(() => {
-        let player;
-        function checkPosition() {
-          var div_position = $('#video-placeholder').offset();
-          var div_top = div_position.top;
-          var div_left = div_position.left;
-          var div_width = $('#video-placeholder').width();
-          var div_height = $('#video-placeholder').height();
-          var top_scroll = $(document).scrollTop();
-          var left_scroll = $(document).scrollLeft();
-          var screen_width = $(window).width();
-          var screen_height = $(window).height() + 600;
-          var see_x1 = left_scroll;
-          var see_x2 = screen_width + left_scroll;
-          var see_y1 = top_scroll;
-          var see_y2 = screen_height + top_scroll;
-          var div_x1 = div_left;
-          var div_x2 = div_left + div_height;
-          var div_y1 = div_top;
-          var div_y2 = div_top + div_width;
-          if (
-            div_x1 >= see_x1 &&
-            div_x2 <= see_x2 &&
-            div_y1 >= see_y1 &&
-            div_y2 <= see_y2
-          ) {
-            player.playVideo();
-          } else {
-            player.pauseVideo();
-          }
-        }
+  // loadScript('https://www.youtube.com/iframe_api').then(() => {
+  //   function onYouTubeIframeAPIReady() {
+  //     YT.ready(() => {
+  //       let player;
+  //       function checkPosition() {
+  //         var div_position = $('#video-placeholder').offset();
+  //         var div_top = div_position.top;
+  //         var div_left = div_position.left;
+  //         var div_width = $('#video-placeholder').width();
+  //         var div_height = $('#video-placeholder').height();
+  //         var top_scroll = $(document).scrollTop();
+  //         var left_scroll = $(document).scrollLeft();
+  //         var screen_width = $(window).width();
+  //         var screen_height = $(window).height() + 600;
+  //         var see_x1 = left_scroll;
+  //         var see_x2 = screen_width + left_scroll;
+  //         var see_y1 = top_scroll;
+  //         var see_y2 = screen_height + top_scroll;
+  //         var div_x1 = div_left;
+  //         var div_x2 = div_left + div_height;
+  //         var div_y1 = div_top;
+  //         var div_y2 = div_top + div_width;
+  //         if (
+  //           div_x1 >= see_x1 &&
+  //           div_x2 <= see_x2 &&
+  //           div_y1 >= see_y1 &&
+  //           div_y2 <= see_y2
+  //         ) {
+  //           player.playVideo();
+  //         } else {
+  //           player.pauseVideo();
+  //         }
+  //       }
 
-        player = new YT.Player('video-placeholder', {
-          width: '100%',
-          height: '100%', //размеры окна видео
-          playerVars: {
-            autoplay: 0,
-            controls: 0,
-            showinfo: 0,
-            rel: 0,
-            mute: 1,
-          }, //тонкие настройки видеопроигрывателя
-          videoId: 'WwQ73-SQ02U', //здесь id ролика
-        });
-        $(document).scroll(function () {
-          checkPosition();
-        });
-        $(window).resize(function () {
-          checkPosition();
-        });
-      });
-    }
+  //       player = new YT.Player('video-placeholder', {
+  //         width: '100%',
+  //         height: '100%', //размеры окна видео
+  //         playerVars: {
+  //           autoplay: 0,
+  //           controls: 0,
+  //           showinfo: 0,
+  //           rel: 0,
+  //           mute: 1,
+  //         }, //тонкие настройки видеопроигрывателя
+  //         videoId: 'WwQ73-SQ02U', //здесь id ролика
+  //       });
+  //       $(document).scroll(function () {
+  //         checkPosition();
+  //       });
+  //       $(window).resize(function () {
+  //         checkPosition();
+  //       });
+  //     });
+  //   }
 
-    onYouTubeIframeAPIReady();
-  });
+  //   onYouTubeIframeAPIReady();
+  // });
 
   Fancybox.bind('[data-fancybox]', {
     // Your custom options
