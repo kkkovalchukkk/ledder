@@ -2005,7 +2005,7 @@ body.no-scroll {
     height: 320px;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -2166,9 +2166,10 @@ body.no-scroll {
         height: 240px
     }
 
+    /* 
     .content__card-title {
         text-align: center;
-    }
+    } */
 }
 
 @media(max-width: 767px) {
