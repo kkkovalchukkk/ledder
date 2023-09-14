@@ -1337,7 +1337,7 @@ body.no-scroll {
 }
 
 .why__item:nth-child(3) .why__item-text {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     max-width: 509px
 }
 
@@ -1359,7 +1359,7 @@ body.no-scroll {
 }
 
 .why__item:nth-child(4) .why__item-text {
-    margin-top: 23px
+    /* margin-top: 23px */
 }
 
 .why__item:nth-child(5) {
@@ -1370,9 +1370,9 @@ body.no-scroll {
     padding-top: 24px
 }
 
-.why__item:last-child .why__item-text {
+/* .why__item:last-child .why__item-text {
     margin-top: 26px
-}
+} */
 
 .why__item-title {
     font-size: 16px;
@@ -1419,7 +1419,7 @@ body.no-scroll {
     }
 
     .why__item:nth-child(3) .why__item-text {
-        margin-top: 24px
+        /* margin-top: 24px */
     }
 
     .why__item:nth-child(4) {
@@ -1428,7 +1428,7 @@ body.no-scroll {
     }
 
     .why__item:nth-child(4) .why__item-text {
-        margin-top: 24px
+        /* margin-top: 24px */
     }
 
     .why__item:nth-child(5) {
@@ -1440,7 +1440,7 @@ body.no-scroll {
     }
 
     .why__item:last-child .why__item-text {
-        margin-top: 24px
+        /* margin-top: 24px */
     }
 
     .why__item-text {
