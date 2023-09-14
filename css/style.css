@@ -1720,10 +1720,20 @@ body.no-scroll {
     transform: rotate(-45deg)
 }
 
+.services__item-box .services__item-link {
+    overflow: hidden;
+    height: 320px;
+}
+
 .services__item-img {
     -o-object-fit: cover;
     object-fit: cover;
-    height: 320px
+    height: 320px;
+    transition: .3s;
+}
+
+.services__item-img:hover {
+    transform: scale(1.1);
 }
 
 .services__item .link,
@@ -1820,7 +1830,8 @@ body.no-scroll {
         margin-bottom: 8px
     }
 
-    .services__item-img {
+    .services__item-img,
+    .services__item-box .services__item-link {
         height: 240px
     }
 }
@@ -2009,35 +2020,52 @@ body.no-scroll {
     color: inherit;
 }
 
+.content__card-item-img-holder {
+    overflow: hidden;
+    height: 320px;
+    margin-bottom: 10px;
+}
+
 .content__card-img {
     height: 320px;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.content__card-img:hover {
+    transform: scale(1.1);
 }
 
 
-
 @media(min-width: 1024px) {
-    .content__card-img {
+
+    .content__card-img,
+    .content__card-item-img-holder {
         height: calc(0.2884615385 * 100vw + 24.6153846154px)
     }
 }
 
 @media(min-width: 1440px) {
-    .content__card-img {
+
+    .content__card-img,
+    .content__card-item-img-holder {
         height: 440px
     }
 }
 
 @media(min-width: 1024px) {
-    .content__card-img {
+
+    .content__card-img,
+    .content__card-item-img-holder {
         margin-bottom: calc(0.0192307692 * 100vw + -3.6923076923px)
     }
 }
 
 @media(min-width: 1440px) {
-    .content__card-img {
+
+    .content__card-img,
+    .content__card-item-img-holder {
         margin-bottom: 24px
     }
 }
@@ -2125,7 +2153,18 @@ body.no-scroll {
     height: 200px;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-bottom: 16px
+    transition: .3s;
+}
+
+.content__item-img:hover {
+    transform: scale(1.1);
+}
+
+.content__item-image-holder {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .content__item-date {
@@ -2205,7 +2244,9 @@ body.no-scroll {
 }
 
 @media(max-width: 479px) {
-    .content__card-img {
+
+    .content__card-img,
+    .content__card-item-img-holder {
         height: 200px
     }
 
