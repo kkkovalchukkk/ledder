@@ -1825,7 +1825,14 @@ body.no-scroll {
     }
 }
 
+
 @media(max-width: 479px) {
+
+    .cooperation__inner {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
     .services__slide-img {
         margin-bottom: 8px
     }
