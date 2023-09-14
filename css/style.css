@@ -2001,6 +2001,10 @@ body.no-scroll {
 }
 
 
+.content__item-link {
+    color: inherit;
+}
+
 .content__card-img {
     height: 320px;
     -o-object-fit: cover;
