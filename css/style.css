@@ -1168,7 +1168,7 @@ body.no-scroll {
 }
 
 .projects__slide-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 @media(min-width: 1024px) {
@@ -1619,7 +1619,7 @@ body.no-scroll {
 }
 
 .services__slide-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .services__slide-img--alt {
@@ -1733,7 +1733,7 @@ body.no-scroll {
 }
 
 .services__item-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .services__item .link,
@@ -2041,7 +2041,7 @@ body.no-scroll {
 }
 
 .content__card-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -2164,7 +2164,7 @@ body.no-scroll {
 }
 
 .content__item-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .content__item-image-holder {
