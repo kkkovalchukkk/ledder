@@ -4365,6 +4365,10 @@ body.no-scroll {
         margin-bottom: 0;
     }
 
+    #middle-form .form__title {
+        margin-bottom: 32px;
+    }
+
     .notFound {
         margin-top: 122px;
         margin-bottom: 194px
