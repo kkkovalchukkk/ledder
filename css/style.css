@@ -814,6 +814,10 @@ body.no-scroll {
 }
 
 @media(max-width: 768px) {
+
+
+
+
     .top .container {
         gap: 24px
     }
@@ -1184,6 +1188,8 @@ body.no-scroll {
 .projects__slide-img:hover {
     transform: scale(1.05);
 }
+
+
 
 @media(min-width: 1024px) {
     .projects__slide-img {
@@ -1790,6 +1796,31 @@ body.no-scroll {
 }
 
 @media(max-width: 768px) {
+
+    .projects__slide-img:hover {
+        transform: unset;
+    }
+
+
+    .services__slide-img:hover {
+        transform: unset;
+    }
+
+
+    .services__item-img:hover {
+        transform: unset;
+    }
+
+
+    .content__card-img:hover {
+        transform: unset;
+    }
+
+
+    .content__item-img:hover {
+        transform: unset;
+    }
+
     .services__inner {
         grid-template-columns: 1fr
     }
