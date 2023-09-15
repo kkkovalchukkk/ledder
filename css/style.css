@@ -1395,6 +1395,7 @@ body.no-scroll {
 } */
 
 .why__item-title {
+    padding-right: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.1
@@ -1954,7 +1955,8 @@ body.no-scroll {
 .questions__item-title {
     position: relative;
     font-weight: 400;
-    letter-spacing: -0.14px
+    letter-spacing: -0.14px;
+    padding-right: 20px;
 }
 
 .questions__item-title::before,
