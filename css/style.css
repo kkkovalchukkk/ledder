@@ -836,11 +836,17 @@ body.no-scroll {
     }
 
     .top__subtitle {
-        max-width: unset
+        /* max-width: unset */
     }
 
     .top .btn {
         font-size: 14px
+    }
+}
+
+@media(max-width: 476px) {
+    .produce__text {
+        max-width: 244px !important;
     }
 }
 
