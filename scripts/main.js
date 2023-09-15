@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  const faviconTag = document.getElementById('faviconTag');
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+  const changeFavicon = () => {
+    if (isDark.matches) faviconTag.href = './favicon-dark-theme.ico';
+    else faviconTag.href = './favicon-light-theme.svg';
+  };
+
+  changeFavicon();
+  setInterval(changeFavicon, 1000);
+
   // const loadScript = (url) =>
   //   new Promise((resolve) => {
   //     const script = document.createElement('script');
