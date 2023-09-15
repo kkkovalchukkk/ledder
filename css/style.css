@@ -1622,6 +1622,10 @@ body.no-scroll {
     transform: scale(1.05);
 }
 
+.content__card-item-link {
+    color: inherit;
+}
+
 .services__slide-img--alt {
     height: 500px
 }
