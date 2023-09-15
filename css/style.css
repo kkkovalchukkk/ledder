@@ -856,6 +856,10 @@ body.no-scroll {
     }
 }
 
+.map {
+    filter: saturate(0);
+}
+
 .cooperation__item-link {
     color: inherit;
 }
