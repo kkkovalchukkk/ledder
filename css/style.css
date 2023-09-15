@@ -1504,7 +1504,7 @@ body.no-scroll {
 @media(max-width: 479px) {
     .why__item-title {
         position: relative;
-        font-size: 12px
+        font-size: 14px
     }
 
     .why__item-title::before,
@@ -1538,7 +1538,7 @@ body.no-scroll {
     .why__item-text {
         display: none;
         padding-left: 32px;
-        font-size: 13px
+        font-size: 12px
     }
 }
 
