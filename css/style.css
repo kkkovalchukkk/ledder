@@ -1799,27 +1799,27 @@ body.no-scroll {
 @media(max-width: 768px) {
 
     .projects__slide-img:hover {
-        transform: unset;
+        transform: unset !important;
     }
 
 
     .services__slide-img:hover {
-        transform: unset;
+        transform: unset !important;
     }
 
 
     .services__item-img:hover {
-        transform: unset;
+        transform: unset !important;
     }
 
 
     .content__card-img:hover {
-        transform: unset;
+        transform: unset !important;
     }
 
 
     .content__item-img:hover {
-        transform: unset;
+        transform: unset !important;
     }
 
     .services__inner {
