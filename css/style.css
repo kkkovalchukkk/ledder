@@ -2192,11 +2192,12 @@ body.no-scroll {
 
 }
 
-.content__item-link h3 {
+.content__item-link h2 {
     font-weight: inherit;
     color: #1c1c1c;
     font-size: 14px;
-    letter-spacing: -0.14px
+    letter-spacing: -0.14px;
+    text-transform: unset;
 }
 
 .content .btn,
