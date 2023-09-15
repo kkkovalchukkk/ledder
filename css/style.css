@@ -1796,6 +1796,10 @@ body.no-scroll {
     }
 }
 
+.content__item-img:hover {
+    transform: scale(1.05);
+}
+
 @media(max-width: 768px) {
 
     .projects__slide-img:hover {
@@ -2214,9 +2218,6 @@ body.no-scroll {
     transition: .3s;
 }
 
-.content__item-img:hover {
-    transform: scale(1.05);
-}
 
 .content__item-image-holder {
     margin-bottom: 16px;
