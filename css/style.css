@@ -856,6 +856,10 @@ body.no-scroll {
     }
 }
 
+.cooperation__item-link {
+    color: inherit;
+}
+
 .produce {
     margin-top: 64px;
     margin-bottom: 64px
