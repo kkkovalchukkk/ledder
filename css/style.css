@@ -3161,11 +3161,44 @@ body.no-scroll {
     overflow: visible
 }
 
+.article__slideTwo,
+.article__slideWidth {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
 .article__slideTwo-img {
     height: 613px;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    aspect-ratio: 3 / 4;
+}
+
+.article__slideWidth-img--even {
+    aspect-ratio: 4 / 3;
+}
+
+@media (max-width:1280px) {
+    .article__slideTwo-img {
+        height: 400px;
+    }
+}
+
+@media (max-width:960px) {
+    .article__slideTwo-img {
+        height: 360px;
+    }
+}
+
+@media (max-width:675px) {
+    .article__slideTwo-img {
+        height: 280px;
+    }
+}
+
+.article__slideTwo-img--even {
+    aspect-ratio: 4 / 3;
 }
 
 .article__slideTwo-text {
@@ -3178,28 +3211,70 @@ body.no-scroll {
     object-fit: cover
 }
 
-.article__slideWidth-img {
-    height: 389px;
-    -o-object-fit: cover;
-    object-fit: cover
+.article__slideWidth {
+    width: 100%;
+    aspect-ratio: 4 / 3;
 }
 
-@media(min-width: 1024px) {
+.article__slideWidth,
+.article__slide,
+.article__slideThree {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+.article__slideThree-img {
+    aspect-ratio: 3 / 4;
+}
+
+.article__slideThree-img--even {
+    aspect-ratio: 4 / 3;
+}
+
+.article__slideWidth-img {
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+.article__slideWidth-img--even {
+    aspect-ratio: 4 / 3;
+}
+
+@media (max-width:1096px) {
+    .article__slideWidth-img {
+        height: 400px;
+    }
+}
+
+
+
+
+
+/* @media(min-width: 1024px) {
     .article__slideWidth-img {
         height: calc(0.2668269231 * 100vw + 115.7692307692px)
     }
-}
+} */
 
-@media(min-width: 1440px) {
-    .article__slideWidth-img {
-        height: 500px
-    }
-}
+/* .article__slideWidth-img {
+    width: 100%;
+    height: 100%;
+} */
 
 .article__slide-img {
     height: 500px;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+}
+
+.article__slide-img--even {
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
 }
 
 @media(min-width: 1024px) {

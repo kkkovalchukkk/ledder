@@ -305,31 +305,25 @@ $(document).ready(function () {
         prevEl: '.article__arrow-prev',
         nextEl: '.article__arrow-next',
       },
-      loop: true,
       autoplay: {
         delay: 5000,
       },
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 40,
       breakpoints: {
         1025: {
-          slidesPerView: 1,
           spaceBetween: 40,
         },
         768: {
-          slidesPerView: 2.2,
           spaceBetween: 20,
         },
         480: {
-          slidesPerView: 1.2,
           spaceBetween: 20,
         },
         360: {
-          slidesPerView: 1.2,
           spaceBetween: 20,
         },
         320: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
       },
@@ -345,28 +339,24 @@ $(document).ready(function () {
       autoplay: {
         delay: 5000,
       },
-      slidesPerView: 2.4,
+      slidesPerView: 'auto',
+
       spaceBetween: 40,
       breakpoints: {
         1025: {
-          slidesPerView: 2.25,
           spaceBetween: 40,
         },
         768: {
-          slidesPerView: 1.6,
           spaceBetween: 20,
         },
         480: {
-          slidesPerView: 0.98,
           spaceBetween: 20,
         },
         360: {
-          slidesPerView: 1.35,
           spaceBetween: 20,
         },
         320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
       },
     });
@@ -381,27 +371,22 @@ $(document).ready(function () {
       autoplay: {
         delay: 5000,
       },
-      slidesPerView: 1.9,
+      slidesPerView: 'auto',
       spaceBetween: 40,
       breakpoints: {
         1025: {
-          slidesPerView: 1.7,
           spaceBetween: 40,
         },
         768: {
-          slidesPerView: 1.2,
           spaceBetween: 20,
         },
         480: {
-          slidesPerView: 1.1,
           spaceBetween: 20,
         },
         360: {
-          slidesPerView: 1.1,
           spaceBetween: 20,
         },
         320: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
       },
@@ -417,27 +402,22 @@ $(document).ready(function () {
       autoplay: {
         delay: 5000,
       },
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 40,
       breakpoints: {
         1025: {
-          slidesPerView: 1,
           spaceBetween: 40,
         },
         768: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
         480: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
         360: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
         320: {
-          slidesPerView: 1,
           spaceBetween: 20,
         },
       },
