@@ -1969,7 +1969,7 @@ body.no-scroll {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 9px;
+    width: 10px;
     height: 1px;
     background-color: #1c1c1c;
     transition: transform .38s ease-in-out;
