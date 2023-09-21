@@ -150,6 +150,31 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   document.querySelectorAll('.form-input-tel').forEach((input) => {
+    input.addEventListener('keydown', (event) => {
+      // Разрешенные клавиши: цифры, клавиши удаления (Backspace, Delete)
+      const allowedKeys = [
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        'Backspace',
+        'Delete',
+      ];
+
+      // Разрешить нажатие разрешенных клавиш
+      if (allowedKeys.includes(event.key)) {
+        return;
+      }
+
+      // Предотвратить ввод остальных символов
+      event.preventDefault();
+    });
     input.addEventListener('input', () => {
       if (input.value.length != 18) {
         input.classList.add('input--invalid');

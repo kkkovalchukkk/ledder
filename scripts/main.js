@@ -158,7 +158,7 @@ $(document).ready(function () {
 
   if (document.querySelector('.form-input-tel')) {
     $('.form-input-tel').mask('+7 (999) 999-99-99', {
-      autoclear: false,
+      autoclear: true,
     });
   }
 
