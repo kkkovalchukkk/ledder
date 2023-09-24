@@ -125,6 +125,11 @@ $(document).ready(function () {
       .children()
       .eq(1)
       .slideToggle();
+    $('.questions__item')
+      .not(this)
+      .removeClass('questions__item--active')
+      .find('.questions__item-text')
+      .slideUp();
   });
 
   $('.model__item').click(function () {
