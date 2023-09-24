@@ -4164,7 +4164,6 @@ body.no-scroll {
     display: grid;
     grid-template-columns: .2fr 1fr;
     align-items: center;
-    gap: 150px;
     padding-top: 12px;
     margin-bottom: 26px;
     border-top: 1px solid #1c1c1c;
@@ -4265,9 +4264,7 @@ body.no-scroll {
         height: 334px
     }
 
-    .designer__contacts-text {
-        gap: 70px
-    }
+    .designer__contacts-text {}
 }
 
 .interview {
