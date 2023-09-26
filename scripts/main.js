@@ -251,13 +251,13 @@ $(document).ready(function () {
           spaceBetween: 20,
         },
         480: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         360: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         320: {
-          spaceBetween: 20,
+          spaceBetween: 5,
         },
       },
     });
@@ -283,13 +283,13 @@ $(document).ready(function () {
           spaceBetween: 20,
         },
         480: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         360: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         320: {
-          spaceBetween: 10,
+          spaceBetween: 5,
         },
       },
     });
@@ -314,13 +314,13 @@ $(document).ready(function () {
           spaceBetween: 20,
         },
         480: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         360: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         320: {
-          spaceBetween: 20,
+          spaceBetween: 5,
         },
       },
     });
@@ -345,13 +345,13 @@ $(document).ready(function () {
           spaceBetween: 20,
         },
         480: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         360: {
-          spaceBetween: 20,
+          spaceBetween: 10,
         },
         320: {
-          spaceBetween: 20,
+          spaceBetween: 5,
         },
       },
     });
