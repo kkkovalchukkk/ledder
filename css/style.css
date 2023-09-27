@@ -4966,8 +4966,9 @@ body.no-scroll {
 }
 
 .swiper,
-.swiper-slide {
-    touch-action: pinch-zoom;
+.swiper-slide,
+.swiper-slide img {
+    touch-action: pinch-zoom !important;
 }
 
 .article__overflow--alt {
