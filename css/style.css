@@ -3173,6 +3173,7 @@ body.no-scroll {
     touch-action: pinch-zoom;
 }
 
+
 .article__slideTwo-img {
     width: 533.33px;
     height: 400px;
@@ -4962,6 +4963,11 @@ body.no-scroll {
 
 .footer__form-input--invalid+.footer__form-error {
     display: initial;
+}
+
+.swiper,
+.swiper-slide {
+    touch-action: pinch-zoom;
 }
 
 
