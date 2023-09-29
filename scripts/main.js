@@ -1,14 +1,4 @@
 $(document).ready(function () {
-  const faviconTag = document.getElementById('faviconTag');
-  const isDark = window.matchMedia('(prefers-color-scheme: dark)');
-  const changeFavicon = () => {
-    if (isDark.matches) faviconTag.href = './favicon-dark-theme.ico';
-    else faviconTag.href = './favicon-light-theme.svg';
-  };
-
-  changeFavicon();
-  setInterval(changeFavicon, 1000);
-
   Fancybox.bind('[data-fancybox]', {});
 
   const formBoxLabel = document.querySelectorAll('.form__box-label');
